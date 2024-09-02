@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Manju Vatika Banquet</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  {% load static %}
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/logo.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Montserrat|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <style>
+    
+    .carousel-item {
+      background-size: cover;
+      background-position: center;
+    }
+    .carousel-item:nth-child(1) {
+      background-image: url("{% static 'assets/img/slide/slide-4.jpg' %}");
+    }
+    .carousel-item:nth-child(2) {
+      background-image: url("{% static 'assets/img/slide/group.png' %}");
+    }
+    .carousel-item:nth-child(3) {
+      background-image: url("{% static 'assets/img/slide/slide-5.jpg' %}");
+    }
+    .form-row {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .col-md-6 {
+        width: 48%;
+    }
+    .form-container {
+      width: 100%;
+      max-width: 1200px; 
+      margin: auto;
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .col-md-6 {
+      width: 48%;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      flex: 1 1 48%;
+    }
+
+    .validate {
+      display: none;  
+    }
+
+    .btn.bg-theme {
+      background-color: #007bff; 
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .php-email-form {
+      width: 100%;
+    }
+
+    .php-email-form input,
+    .php-email-form select,
+    .php-email-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top topbar-transparent">
+    <div class="container text-right">
+      <i class="icofont-phone"></i> <a href="tel:08460487225" class="text-decoration-none" style="color:rgba(255, 255, 255, 0.7)!important">08460487225</a>
+      <i class="icofont-clock-time icofont-rotate-180"></i> Mon-Sun: 09:00 AM - 11:00 PM
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="h-auto fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto">
+        
+        <a href=""><img src="{% static 'assets/img/logo.png' %}" alt="Logo" class="img-fluid"></a>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Facilities</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="{% url 'gallery' %}">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Manju</span> Vatika Banquet</h2>
+                <p class="animate__animated animate__fadeInUp">The Manju Vatika Banquet Hall is an upscale, event facility, located in the heart of Khagaria</p>
+                <div>
+                  <a href="{% url 'gallery' %}" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Gallery</a>
+                  <a href="#contact" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Date</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Manju</span> Vatika Banquet</h2>
+                <p class="animate__animated animate__fadeInUp">The Manju Vatika Banquet Hall is an upscale, event facility, located in the heart of Khagaria</p>
+                <div>
+                  <a href="{% url 'gallery' %}" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Gallery</a>
+                  <a href="#contact" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Date</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Manju</span> Vatika Banquet</h2>
+                <p class="animate__animated animate__fadeInUp">The Manju Vatika Banquet Hall is an upscale, event facility, located in the heart of Khagaria</p>
+                <div>
+                  <a href="{% url 'gallery' %}" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Gallery</a>
+                  <a href="#contact" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Date</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row flex-row-reverse">
+
+          <div class="col-lg-6 align-items-stretch video-box">
+            <img src="{% static 'assets/img/about.jpg'%}" class="img-fluid w-100">
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch">
+            <div class="content">
+              <h2 class="line-heading display-2">About</h2>
+              <p style="text-align:justify;">
+                Welcome to Manju Vatika, where cherished memories blossom and celebrations flourish in a serene embrace. Nestled in nature's lap, our charming wedding venue is a testament to rustic elegance and warm hospitality. With its lush gardens, picturesque surroundings, and thoughtful amenities, Manju Vatika provides the perfect backdrop for your special day. Our caring team is dedicated to ensuring a smooth and joyful experience, carefully tending to every detail of your event. Whether you're planning an intimate gathering or a festive affair, we adapt our offerings to bring your unique vision to life. Step into our verdant haven and plant the seeds of lifelong memories at Manju Vatika, where nature's beauty enhances the magic of love.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ============= We’ll make your next celebration very special! Start====================== -->
+    <section id="next-celebration">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="text-theme">We’ll <span class="text-theme">make your next celebration very special!</span></h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="card">
+              <img class="card-img-top" src="{% static 'assets/img/services/service1.jpg'%}" alt="Card image cap">
+              <div class="card-body bg-light text-center">
+                <h5 class="card-title m-0 my-1 font-mont  font-weight-bold">Ring Ceremony</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="card">
+              <img class="card-img-top" src="{% static 'assets/img/services/service2.jpg'%}" alt="Card image cap">
+              <div class="card-body bg-light text-center">
+                <h5 class="card-title m-0 my-1 font-mont  font-weight-bold">Weddings</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="card">
+              <img class="card-img-top" src="{% static 'assets/img/services/service3.jpg'%}" alt="Card image cap">
+              <div class="card-body bg-light text-center">
+                <h5 class="card-title m-0 my-1 font-mont  font-weight-bold">Social Events</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="card">
+              <img class="card-img-top" src="{% static 'assets/img/services/service4.jpg'%}" alt="Card image cap">
+              <div class="card-body bg-light text-center">
+                <h5 class="card-title m-0 my-1 font-mont  font-weight-bold">Corporate</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 text-center pt-4">
+            <!-- <button class="btn bg-theme text-center">View More</button> -->
+        </div>
+      </div>
+    </section><!-- End Next Celebration -->
+
+    <!-- ======== What We Offer ========== -->
+    <section id="what-offer">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="text-theme">Our<span class="text-theme"> Services!</span></h2>
+          <p>Our versatile venue accommodates a range of celebration styles, from traditional ceremonies to modern receptions.</p>
+        </div>
+        <div class="row m-0 w-100">
+          <div class="col-lg-12 align-items-stretch">
+            <div class="row m-0 w-100 mb-5">
+              <div class="col-md-2 text-center d-flex justify-content-center mb-5 mb-lg-0">
+                <div class="align-items-center d-flex flex-column float-left justify-content-center offer-contect">
+                  <div class="align-items-center shadow bg-light d-flex justify-content-center m-0 offer-icon p-0 rounded-circle" style="width: 150px; height: 150px;">
+                    <i class="bi bi-balloon-heart display-3 text-theme"></i>
+                  </div>
+                  <div class="offer-text mt-3">Catering and Decorations</div>
+                </div>
+              </div>
+              <div class="col-md-3"></div>
+              <div class="col-md-2 text-center d-flex justify-content-center mb-5 mb-lg-0">
+                <div class="align-items-center d-flex flex-column float-left justify-content-center offer-contect">
+                  <div class="align-items-center shadow bg-light d-flex justify-content-center m-0 offer-icon p-0 rounded-circle" style="width: 150px; height: 150px;">
+                    <i class="bi bi-flower1 display-3 text-theme"></i>
+                  </div>
+                  <div class="offer-text mt-3">Professional Services Staff</div>
+                </div>
+              </div>
+              <div class="col-md-3"></div>
+              <div class="col-md-2 text-center d-flex justify-content-center mb-5 mb-lg-0">
+                <div class="align-items-center d-flex flex-column float-left justify-content-center offer-contect">
+                  <div class="align-items-center shadow bg-light d-flex justify-content-center m-0 offer-icon p-0 rounded-circle" style="width: 150px; height: 150px;">
+                    <i class="bi bi-fan display-3 text-theme"></i>
+                  </div>
+                  <div class="offer-text mt-3">Air Conditional Hall</div>
+                </div>
+              </div>
+            </div>
+            <div class="row m-0 w-100 mt-5">
+              <div class="col-md-2 text-center d-flex justify-content-center mb-5 mb-lg-0">
+                <div class="align-items-center d-flex flex-column float-left justify-content-center offer-contect">
+                  <div class="align-items-center shadow bg-light d-flex justify-content-center m-0 offer-icon p-0 rounded-circle" style="width: 150px; height: 150px;">
+                    <i class="bi bi-car-front-fill display-3 text-theme"></i>
+                  </div>
+                  <div class="offer-text mt-3">Parking</div>
+                </div>
+              </div>
+              <div class="col-md-3"></div>
+              <div class="col-md-2 text-center d-flex justify-content-center mb-5 mb-lg-0">
+                <div class="align-items-center d-flex flex-column float-left justify-content-center offer-contect">
+                  <div class="align-items-center shadow bg-light d-flex justify-content-center m-0 offer-icon p-0 rounded-circle" style="width: 150px; height: 150px;">
+                    <i class="bi bi-music-note-list display-3 text-theme"></i>
+                  </div>
+                  <div class="offer-text mt-3">Indoor/Outdoor Venue</div>
+                </div>
+              </div>
+              <div class="col-md-3"></div>
+              <div class="col-md-2 text-center d-flex justify-content-center mb-5 mb-lg-0">
+                <div class="align-items-center d-flex flex-column float-left justify-content-center offer-contect">
+                  <div class="align-items-center shadow bg-light d-flex justify-content-center m-0 offer-icon p-0 rounded-circle" style="width: 150px; height: 150px;">
+                    <i class="bi bi-exclamation-triangle-fill display-3 text-theme"></i>
+                  </div>
+                  <div class="offer-text mt-3">Security</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- What We Offer -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 class="text-theme">Why choose <span class="text-theme">Manju Vatika Banquet Hall</span></h2>
+        </div>
+
+          <div class="row p-1">
+            <div class="col-lg-4">
+              <div class="box h-100">
+                <span class="text-theme">#1</span>
+                <h4>Customize Theme</h4>
+                <p>Immerse in opulence - Manju Vatika Banquet's theme, where celebrations embrace elegance.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box">
+                <span class="text-theme">#2</span>
+                <h4>Atmosphere </h4>
+                <p>Manju Vatika Banquet aims to create an environment that caters for the needs of everyone’s events, regardless of their age and wants.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box">
+                <span class="text-theme">#3</span>
+                <h4>Numerous Facilities</h4>
+                <p>At Manju Vatika Banquet, you can find various facilities that you can avail and customize your event to be exactly how you pictured it.</p>
+              </div>
+            </div>
+
+          </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu">
+      <div class="container">
+    
+        <div class="section-title">
+          <h2 class="text-theme">Check our Venue <span class="text-theme">Facilities</span></h2>
+        </div>
+    
+        <div class="row menu-container">
+    
+          <div class="col-lg-3 menu-item">
+            <div class="menu-content">
+              <i class="bi bi-arrow-right text-theme"></i>
+              <a class="text-black-50">Custom Theme</a>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 menu-item">
+            <div class="menu-content">
+              <i class="bi bi-arrow-right text-theme"></i>
+              <a class="text-black-50">Backup Power Generation</a>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 menu-item">
+            <div class="menu-content">
+              <i class="bi bi-arrow-right text-theme"></i>
+              <a class="text-black-50">Chandeliers</a>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 menu-item">
+            <div class="menu-content">
+              <i class="bi bi-arrow-right text-theme"></i>
+              <a class="text-black-50">Exceptional Carpets</a>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 menu-item">
+            <div class="menu-content">
+              <i class="bi bi-arrow-right text-theme"></i>
+              <a class="text-black-50">Crockery-Cutlery</a>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 menu-item">
+            <div class="menu-content">
+              <i class="bi bi-arrow-right text-theme"></i>
+              <a class="text-black-50">Parking Facilities</a>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 menu-item">
+            <div class="menu-content">
+              <i class="bi bi-arrow-right text-theme"></i>
+              <a class="text-black-50">Wedding Panelling</a>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 menu-item">
+            <div class="menu-content">
+              <i class="bi bi-arrow-right text-theme"></i>
+              <a class="text-black-50">Lounges</a>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 menu-item">
+            <div class="menu-content">
+              <i class="bi bi-arrow-right text-theme"></i>
+              <a class="text-black-50">Air Conditioners</a>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 menu-item">
+            <div class="menu-content">
+              <i class="bi bi-arrow-right text-theme"></i>
+              <a class="text-black-50">Bridal Room</a>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 menu-item">
+            <div class="menu-content">
+              <i class="bi bi-arrow-right text-theme"></i>
+              <a class="text-black-50">LED Lights</a>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 menu-item">
+            <div class="menu-content">
+              <i class="bi bi-arrow-right text-theme"></i>
+              <a class="text-black-50">Waiter Services</a>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 menu-item">
+            <div class="menu-content">
+              <i class="bi bi-arrow-right text-theme"></i>
+              <a class="text-black-50">Gated Premises</a>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 menu-item">
+            <div class="menu-content">
+              <i class="bi bi-arrow-right text-theme"></i>
+              <a class="text-black-50">Floral Works</a>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 menu-item">
+            <div class="menu-content">
+              <i class="bi bi-arrow-right text-theme"></i>
+              <a class="text-black-50">Tiled Walkways</a>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 menu-item">
+            <div class="menu-content">
+              <i class="bi bi-arrow-right text-theme"></i>
+              <a class="text-black-50">Sound System</a>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 menu-item">
+            <div class="menu-content">
+              <i class="bi bi-arrow-right text-theme"></i>
+              <a class="text-black-50">LED Dance Floor</a>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 menu-item">
+            <div class="menu-content">
+              <i class="bi bi-arrow-right text-theme"></i>
+              <a class="text-black-50">Gorgeous Walls</a>
+            </div>
+          </div>
+    
+        </div>
+    
+      </div>
+    </section>
+    <!-- End Menu Section -->
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Get ready to experience the <span class="text-theme">lavishness</span> at Manju Vatika Banquet Hall</h2>
+        </div>
+
+        <div class="owl-carousel events-carousel">
+
+          <div class="row event-item">
+            <div class="col-lg-6">
+              <h3 style="text-align:center;" class="text-theme">Mehndi Event</h3>
+              <img src="{% static 'assets/img/event-birthday.jpg'%}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6">
+              <h3 style="text-align:center;"  class="text-theme">Ring Ceremony</h3>
+              <img src="{% static 'assets/img/mayyun.jpg'%}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="row event-item">
+            <div class="col-lg-6">
+                <h3 style="text-align:center;" class="text-theme">Birthday Parties</h3>
+              <img src="{% static 'assets/img/event-private.jpg'%}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6">
+                <h3 style="text-align:center;" class="text-theme">Corporate Events</h3>
+              <img src="{% static 'assets/img/corporate.jpg'%}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="row event-item">
+            <div class="col-lg-6">
+              <h3 style="text-align:center;" class="text-theme">Baraat Events</h3>
+              <img src="{% static 'assets/img/event-custom.jpg'%}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6">
+              <h3 style="text-align:center;" class="text-theme">Sangeet Events</h3>
+              <img src="{% static 'assets/img/Valima.jpg'%}" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Events Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="text-theme"><span class="text-theme">Contact</span> Us</h2>
+        </div>
+      </div>
+      
+      <div class="map">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.6926371693926!2d86.47618287539221!3d25.51529537750752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f1e546146586a1%3A0x8c5ee07a3dacd67c!2sManju%20vatika!5e0!3m2!1sen!2sin!4v1721321289546!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      
+      <div class="container mt-5">
+        <div class="info-wrap">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 info">
+              <i class="icofont-google-map text-theme"></i>
+              <h4>Location:</h4>
+              <p>Marar Rd, Rajendra Nagar, Haripur, Sanhouli, Khagaria, Bihar 851205</p>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="icofont-clock-time icofont-rotate-90 text-theme"></i>
+              <h4>Open Hours:</h4>
+              <p>Monday-Sunday:<br>09:00 AM - 11:00 PM</p> 
+            </div>
+    
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="icofont-envelope text-theme"></i>
+              <h4>Email:</h4>
+              <p><a href="mailto:manjuvatika@gmail.com" class="text-decoration-none" style="color:#7a7368!important">manjuvatika@gmail.com</a></p>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="icofont-phone text-theme"></i>
+              <h4>Call:</h4>
+              <p><a href="tel:08460487225" class="text-decoration-none" style="color:#7a7368!important">08460487225</a></p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Enquiry form -->
+        <div class="form-container">
+          <form id="enquiryForm" class="php-email-form" method="post" action="{% url 'submit_enquiry' %}">
+            {% csrf_token %}
+            <div class="form-row">
+              <div class="col-md-6 form-group">
+                <label for="{{ form.first_name.id_for_label }}">First Name</label>
+                {{ form.first_name }}
+                <div class="validate"></div>
+              </div>
+              <div class="col-md-6 form-group">
+                <label for="{{ form.last_name.id_for_label }}">Last Name</label>
+                {{ form.last_name }}
+                <div class="validate"></div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 form-group">
+                <label for="{{ form.email.id_for_label }}">Email</label>
+                {{ form.email }}
+                <div class="validate"></div>
+              </div>
+              <div class="col-md-6 form-group">
+                <label for="{{ form.phone.id_for_label }}">Phone</label>
+                {{ form.phone }}
+                <div class="validate"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="{{ form.event_date.id_for_label }}">Event Date</label>
+              {{ form.event_date }}
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <label for="{{ form.guest_count.id_for_label }}">Guest Count</label>
+              {{ form.guest_count }}
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <label for="{{ form.event_type.id_for_label }}">Event Type</label>
+              {{ form.event_type }}
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <label for="{{ form.comments.id_for_label }}">Comments</label>
+              {{ form.comments }}
+              <div class="validate"></div>
+            </div>
+            
+            <div class="text-center"><button type="submit" id="submitButton" class="btn bg-theme">Send Enquiry</button></div>
+          </form>
+        </div>
+      </div>
+    
+      <div id="form-messages"></div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var today = new Date().toISOString().split('T')[0];
+          document.getElementsByName("event_date")[0].setAttribute('min', today);
+        });
+    
+        $(document).ready(function() {
+          $('#enquiryForm').on('submit', function(event) {
+            event.preventDefault();
+            var submitButton = $('#submitButton');
+            if (submitButton.prop('disabled')) {
+              return;
+            }
+            submitButton.prop('disabled', true); // Disable the submit button 
+            $.ajax({
+              url: $(this).attr('action'),
+              method: 'POST',
+              data: $(this).serialize(),
+              success: function(data) {
+                if (data.success) {
+                  $('#form-messages').html('<p style="color: green;">Enquiry submitted successfully!</p>');
+                  $('#enquiryForm')[0].reset();
+                } else {
+                  let errorMessages = '<ul style="color: red;">';
+                  if (data.errors) {
+                    for (let key in data.errors) {
+                      data.errors[key].forEach(function(error) {
+                        errorMessages += '<li>' + error + '</li>';
+                      });
+                    }
+                  } else if (data.error) {
+                    errorMessages += '<li>' + data.error + '</li>';
+                  }
+                  errorMessages += '</ul>';
+                  $('#form-messages').html(errorMessages);
+                }
+              },
+              error: function() {
+                $('#form-messages').html('<p style="color: red;">An error occurred while submitting the form.</p>');
+              },
+              complete: function() {
+                submitButton.prop('disabled', false); // Re-enable the submit button
+              }
+            });
+          });
+        });
+      </script>
+    </section>
+    
+    <!-- End Contact Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3 class="text-theme">Manju Vatika Banquet Hall</h3>
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=100077396990316&mibextid=ZbWKwL" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+      <div class="copyright">
+        © Copyright 2024 <strong><span>Manju Vatika Banquet Hall</span></strong>. All Rights Reserved
+      </div>
+      
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up bg-theme"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+  <script src="{% static 'assets/vendor/jquery-sticky/jquery.sticky.js'%}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/venobox/venobox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js'%}"></script>
+
+
+
+</body>
+</html>

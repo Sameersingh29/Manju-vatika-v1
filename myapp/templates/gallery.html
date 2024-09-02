@@ -1,0 +1,330 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Manju Vatika Banquet</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  {% load static %}
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/logo.png'%}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Montserrat|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/icofont/icofont.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/venobox/venobox.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css'%}" rel="stylesheet">
+
+  <style>
+    .carousel-item {
+      background-size: cover;
+      background-position: center;
+    }
+    .carousel-item:nth-child(1) {
+      background-image: url("{% static 'assets/img/slide/slide-4.jpg' %}");
+    }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: Delicious - v2.1.0
+  * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top topbar-transparent">
+    <div class="container text-right">
+      <i class="icofont-phone"></i> 08460487225
+      <i class="icofont-clock-time icofont-rotate-180"></i> Mon-Sun: 09:00 AM - 11:00 PM
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="h-auto fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto">
+         <a href="{% url 'index' %}"><img src="{% static 'assets/img/logo.png'%}" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class=""><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'index' %}">About</a></li>
+          <li><a href="{% url 'index' %}">Facilities</a></li>
+          <!-- <li><a href="{% url 'index' %}">Specials</a></li> -->
+          <li><a href="{% url 'index' %}">Events</a></li>
+          <!--<li><a href="#chefs">Chefs</a></li>-->
+          <li class="active"><a href="#gallery">Gallery</a></li>
+          <li><a href="{% url 'index' %}">Contact</a></li>
+
+          <!-- <li class="book-a-table text-center"><a href="{% url 'index' %}">Book a date</a></li> -->
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown h1"><span>Our</span> Gallery</h2>
+                <p class="animate__animated animate__fadeInUp">The Manju Vatika Banquet Hall is an upscale, event facility, located in the heart of Khagaria</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- ======= Gallery Section ======= -->
+  <section id="gallery" class="gallery mb-5">
+    <div class="container">
+
+      <div class="section-title">
+        <h2><span class="text-theme">Manju Vatika Banquet Hall Gallery</span></h2>
+      </div>
+
+      <div class="row no-gutters">
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gal1.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gal1.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gal2.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gal2.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gal3.png'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gal3.png'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gal4.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gal4.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gal5.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gal5.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gal6.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gal6.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gal7.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gal7.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gal8.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gal8.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gal10.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gal10.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gal11.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gal11.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gal12.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gal12.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gal9.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gal9.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gal13.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gal13.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gal16.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gal16.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gal14.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gal14.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gallery-8.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-8.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gallery-1.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-1.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gallery-2.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-2.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gallery-3.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-3.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gal15.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gal15.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/taj16.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/taj16.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gallery-6.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-6.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gallery-7.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-7.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item h-100">
+            <a href="{% static 'assets/img/gallery/gallery-8.jpg'%}" class="venobox" data-gall="gallery-item">
+              <img src="{% static 'assets/img/gallery/gallery-8.jpg'%}" alt="" class="img-fluid h-100">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Gallery Section -->
+
+    <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3 class="text-theme">Manju Vatika Banquet Hall</h3>
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=100077396990316&mibextid=ZbWKwL" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="javascript:void(0)" class="instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+      <div class="copyright">
+        © Copyright 2024 <strong><span>Manju Vatika Banquet Hall</span></strong>. All Rights Reserved
+      </div>
+      
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up bg-theme"></i></a>
+
+
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/venobox/venobox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js'%}"></script>
+  <script src="{% static 'assets/js/main.js'%}"></script>
+</body>
+</html>

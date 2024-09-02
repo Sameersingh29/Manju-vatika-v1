@@ -1,0 +1,3 @@
+Steps to Execute this Project:
+
+-> Create a new Folder. Example - "demo". -> Open terminal in "demo". -> Install python "pip install python". -> Create a Virtual Evnironment "python -m venv myenv". -> Activate Virtual Environment "myenv\Scripts\activate". -> Install Django "pip install django". -> Start a Django project "django-admin startproject Manju_Vatika_v1". -> Go into project "cd Manju_Vatika_v1". -> Create an application "python manage.py startapp myapp". -> Replace the folder you created with the "myapp" folder in repository. -> Replace the <Manju_Vatika_v1> folder you created with the "Manju_Vatika_v1" folder in repository. -> Run migrations "python manage.py makemigrations" >> "python manage.py migrate". -> Then run Project using "python manage.py runserver"
