@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-u!6purvvemwm*5p6=e9_^et+p!ik+t&+gx$o9k-acs#pvx34mc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['manju-vatika-v1.onrender.com','127.0.0.1']
+ALLOWED_HOSTS = ['manju-vatika-v1.onrender.com','127.0.0.1','localhost','0.0.0.0']
 
 
 # Application definition
@@ -124,7 +124,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'myapp/static')]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
