@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-u!6purvvemwm*5p6=e9_^et+p!ik+t&+gx$o9k-acs#pvx34mc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['manju-vatika-v1.onrender.com','127.0.0.1','web-production-1a183.up.railway.app']
+ALLOWED_HOSTS = ['manju-vatika-v1.onrender.com','127.0.0.1','sameer29.pythonanywhere.com']
 
 
 # Application definition
@@ -121,7 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'myapp/static')]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
